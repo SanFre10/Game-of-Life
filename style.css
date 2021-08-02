@@ -1,12 +1,81 @@
+:root {
+    --color: #ffc800;
+}
+body{
+    background-color: #444444;
+}
+.controls{
+    text-align: center;
+    padding: 20px 30%;
+    background-color: #2c2f33;
+    color: var(--color);
+}
+.pure-g [class *= "pure-u"] {
+    font-family: roboto,monospace;
+}
+.controls input[type="text"]{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em;
+    border:none;
+    height: 50px;
+}
+.controls input[type="text"]:hover {
+    font-size: 1.7em;
+    transition: all 0.1s ease-in-out;
+}
+
+.controls input[type="text"]:focus {
+    outline: none;
+}
+#play,#clear,#toggleGrid{
+    margin:auto;
+    border: 0;
+    color: var(--color);
+    background-color: #2c2f33;
+    margin-top: 10px;
+    border: 1px solid #2c2f33;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    height: 60px;
+    box-sizing: border-box;
+}
+#play:hover,#clear:hover,#toggleGrid.activated{
+    background-color: var(--color);
+    color: black;
+    transition: all 0.1s ease-in-out;
+}
+#color{
+    margin-top:10px;
+    padding-top: 5px;
+}
+#colorPicker{
+    cursor: pointer;
+}
+input[type="color"]{
+    width: 100%;
+    height: 30px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    background-color: #2c2f33;
+    color: var(--color);
+}
 #gridDiv {
-    margin:0 50px 0 50px;
+    margin: 20px;
 }
 table{
+    border: 1px solid;
     border-collapse:collapse;
     margin: auto;
+    background-color: white
 }
 .celula{
-
+    box-sizing: border-box;
+    width:20px;
+    height:20px;
 }
 .celula.live{
     background-color: black;
